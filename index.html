@@ -26,7 +26,7 @@
   <body>
     <section class="interactive">
       <!-- Rating state start -->
-      <div class="interactive__feedback">
+      <div class="interactive__rating container">
         <div class="interactive__icon">
           <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -42,26 +42,36 @@
           is appreciated to help us improve our offering!
         </p>
         <div class="interactive__cta">
-          <button class="interactive__cta-btn">1</button>
-          <button class="interactive__cta-btn">2</button>
-          <button class="interactive__cta-btn">3</button>
-          <button class="interactive__cta-btn">4</button>
-          <button class="interactive__cta-btn">5</button>
+          <button class="interactive__cta-btn" value="1">1</button>
+          <button class="interactive__cta-btn" value="2">2</button>
+          <button class="interactive__cta-btn" value="3">3</button>
+          <button class="interactive__cta-btn" value="4">4</button>
+          <button class="interactive__cta-btn" value="5">5</button>
         </div>
-        <button class="interactive__submit-btn" type="submit">Submit</button>
+        <button class="interactive__submit-btn">Submit</button>
       </div>
       <!-- Rating state end -->
-
-      <!-- Thank you state start -->
-
-      <div class="interactive__thankyou hidden">
-        You selected Add rating here out of 5 Thank you! We appreciate you
-        taking the time to give a rating. If you ever need more support, don’t
-        hesitate to get in touch!
+    
+    <!-- Thank you state start -->
+    <div class="interactive__thankyou container hidden">
+      <div>
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you illustration"
+        />
       </div>
 
-      <!-- Thank you state end -->
-    </section>
+      <div class="interactive__thankyou-result">
+        You selected <span class="rating"></span> out of 5
+      </div>
+      <h2>Thank you!</h1>
+      <p class="interactive__content">
+        We appreciate you taking the time to give a rating. If you ever need more
+      support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <!-- Thank you state end -->
+  </section>
     <script src="./index.js"></script>
   </body>
 </html>

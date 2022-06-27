@@ -38,5 +38,24 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-neutral-white);
+      color: var(--color-primary-orange);
+    }
   }
+}
+
+.interactive__thankyou-result {
+  background-color: hsl(213, 19%, 21%);
+  color: var(--color-primary-orange);
+  padding: 0.8rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+}
+
+.rating-clicked {
+  background-color: var(--color-primary-orange);
+  color: var(--color-neutral-white);
 }

@@ -1,19 +1,23 @@
 'use strict';
 
-// sample javascript
+const interactiveRating = document.querySelector('.interactive__rating');
+const interactiveResult = document.querySelector('.interactive__thankyou');
 
-// const interactiveFeedback = document.querySelector('.interactive__feedback');
-// const interactiveThankyou = document.querySelector('.interactive__thankyou');
-// const clicked = () => {
-//   interactiveThankyou.classList.remove('hidden');
-// };
+const ratingBtn = document.querySelectorAll('.interactive__cta-btn');
+const submitBtn = document.querySelector('.interactive__submit-btn');
 
-// // const rateBtn = document.querySelectorAll('.interactive__cta-btn');
+let rating = 0;
+rating;
 
-// const submitBtn = document.querySelector('.interactive__submit-btn');
+const ratingClicked = i => {
+  i.classList.add('rating-clicked');
+  document.querySelector('.rating').textContent = i.value;
+};
+ratingBtn.forEach(i => {
+  i.addEventListener('click', () => ratingClicked(i));
+});
 
-// submitBtn.addEventListener('click', clicked);
-
-// // for (let i = 0; i < rateBtn.length; i++) {
-// //   rateBtn[i].addEventListener('click', clicked);
-// // }
+submitBtn.addEventListener('click', () => {
+  interactiveRating.classList.add('hidden');
+  interactiveResult.classList.remove('hidden');
+});

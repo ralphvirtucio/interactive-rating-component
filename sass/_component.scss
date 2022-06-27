@@ -1,0 +1,42 @@
+.interactive {
+  &__icon {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 21%);
+    color: var(--color-neutral-grey-light);
+    border: none;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &__content {
+    color: var(--color-neutral-grey-light);
+    line-height: 1.5;
+  }
+  &__cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+
+    &-btn {
+      padding: 1rem;
+      border-radius: 50%;
+      background-color: hsl(213, 19%, 21%);
+      color: var(--color-neutral-grey-light);
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+    }
+  }
+  &__submit-btn {
+    background-color: var(--color-primary-orange);
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    color: var(--color-neutral-white);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+  }
+}

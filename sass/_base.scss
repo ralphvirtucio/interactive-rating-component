@@ -1,3 +1,18 @@
+:root {
+  --color-primary-orange: hsl(25, 97%, 53%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-grey-light: hsl(217, 12%, 63%);
+  --color-neutral-grey-medium: hsl(216, 12%, 54%);
+  --color-neutral-dark-blue: hsl(213, 19%, 18%);
+  --color-neutral-very-dark-blue: hsl(216, 12%, 8%);
+
+  --font-size-body: 0.94rem;
+
+  --font-family: 'Overpass', sans-serif;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
 html {
   box-sizing: border-box;
 }

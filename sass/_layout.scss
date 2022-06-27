@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: var(--color-neutral-very-dark-blue);
+  font-family: var(--font-family);
+  color: var(--color-neutral-white);
+}
+
+.interactive {
+  max-width: 26rem;
+  background-color: var(--color-neutral-dark-blue);
+  padding: 2rem;
+  border-radius: 10px;
+
+  &__feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+.hidden {
+  display: none;
+}

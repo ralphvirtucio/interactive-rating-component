@@ -35,6 +35,11 @@ body {
   font-family: var(--font-family);
   color: var(--color-neutral-white);
 }
+@media only screen and (max-width: 375px) {
+  body {
+    padding: 2rem;
+  }
+}
 
 .container {
   max-width: 26rem;
@@ -90,7 +95,7 @@ body {
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-.interactive__cta-btn {
+.interactive__cta__button {
   padding: 1rem;
   border-radius: 50%;
   background-color: hsl(213deg, 19%, 21%);
@@ -125,13 +130,43 @@ body {
   margin-bottom: 2rem;
 }
 
-.rating-clicked {
-  background-color: var(--color-primary-orange);
+input {
+  display: none;
+}
+
+label {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-neutral-dar-medium);
   color: var(--color-neutral-white);
 }
 
-.rating-clicked + .rating-unclicked {
+input[type=radio] + label {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
   background-color: var(--color-neutral-grey-medium);
+  color: var(--color-neutral-white);
+}
+
+input[type=radio]:checked + label {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary-orange);
   color: var(--color-neutral-white);
 }
 

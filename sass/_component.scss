@@ -21,7 +21,7 @@
     justify-content: space-between;
     margin-bottom: 1rem;
 
-    &-btn {
+    &__button {
       padding: 1rem;
       border-radius: 50%;
       background-color: hsl(213, 19%, 21%);
@@ -59,12 +59,43 @@
   margin-bottom: 2rem;
 }
 
-.rating-clicked {
-  background-color: var(--color-primary-orange);
+input {
+  display: none;
+}
+
+label {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-neutral-dar-medium);
   color: var(--color-neutral-white);
 }
 
-.rating-clicked + .rating-unclicked {
+input[type='radio'] + label {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
   background-color: var(--color-neutral-grey-medium);
+  color: var(--color-neutral-white);
+}
+
+input[type='radio']:checked + label {
+  // Styles for the selected option
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary-orange);
   color: var(--color-neutral-white);
 }

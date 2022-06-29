@@ -7,6 +7,10 @@ body {
   background-color: var(--color-neutral-very-dark-blue);
   font-family: var(--font-family);
   color: var(--color-neutral-white);
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 2rem;
+  }
 }
 
 .container {

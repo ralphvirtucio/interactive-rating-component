@@ -1,20 +1,16 @@
 'use strict';
 
 //Selected Elements
-const ratingBtn = document.querySelectorAll('.interactive__cta-btn');
+const ratingBtn = document.querySelectorAll('.rating-btn');
 const submitBtn = document.querySelector('.interactive__submit-btn');
 const thankYouSection = document.querySelector('.interactive__thankyou');
 const welcomeSection = document.querySelector('.interactive__rating');
 
 //Main Logic
 const ratingClicked = rating => {
-  if (!rating.classList.contains('rating-clicked')) {
-    rating.classList.add('rating-clicked');
-    document.querySelector('.rating').textContent = rating.value;
-  } else {
-    rating.classList.remove('rating-clicked');
-    document.querySelector('.rating').textContent = 0;
-  }
+  document.querySelector('.rating').textContent = document.getElementById(
+    rating.id
+  ).value;
 };
 
 ratingBtn.forEach(i => {

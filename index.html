@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -11,12 +10,54 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <!-- INTERACTIVE CARD -->
+    <div class="interactive">
+      <div class="interactive__ratings-card">
+        <div class="interactive__img-container">
+          <img src="./images/icon-star.svg" alt="Icon Star" />
+        </div>
+        <h1 class="interactive__heading">How did we do?</h1>
+        <p class="interactive__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form action="/" class="rating-form">
+          <div class="form-field">
+            <input type="radio" name="1" id="1" hidden />
+            <label for="1">1</label>
+          </div>
+          <div class="form-field">
+            <input type="radio" name="2" id="2" hidden />
+            <label for="2">2</label>
+          </div>
+          <div class="form-field">
+            <input type="radio" name="3" id="3" hidden />
+            <label for="3">3</label>
+          </div>
+          <div class="form-field">
+            <input type="radio" name="4" id="4" hidden />
+            <label for="4">4</label>
+          </div>
+          <div class="form-field">
+            <input type="radio" name="5" id="5" hidden />
+            <label for="5">5</label>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
     <!-- Rating state start -->
 
     <!-- How did we do?

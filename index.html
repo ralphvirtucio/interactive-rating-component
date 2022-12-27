@@ -20,13 +20,16 @@
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
+
   <body>
     <!-- INTERACTIVE CARD -->
     <div class="interactive">
       <div class="interactive__ratings-card">
-        <div class="interactive__img-container">
-          <img src="./images/icon-star.svg" alt="Icon Star" />
-        </div>
+        <img
+          src="./images/icon-star.svg"
+          alt="Icon Star"
+          class="interactive__img"
+        />
         <h1 class="interactive__heading">How did we do?</h1>
         <p class="interactive__text">
           Please let us know how we did with your support request. All feedback
@@ -34,25 +37,27 @@
         </p>
 
         <form action="/" class="rating-form">
-          <div class="form-field">
-            <input type="radio" name="1" id="1" hidden />
-            <label for="1">1</label>
-          </div>
-          <div class="form-field">
-            <input type="radio" name="2" id="2" hidden />
-            <label for="2">2</label>
-          </div>
-          <div class="form-field">
-            <input type="radio" name="3" id="3" hidden />
-            <label for="3">3</label>
-          </div>
-          <div class="form-field">
-            <input type="radio" name="4" id="4" hidden />
-            <label for="4">4</label>
-          </div>
-          <div class="form-field">
-            <input type="radio" name="5" id="5" hidden />
-            <label for="5">5</label>
+          <div class="ratings">
+            <div class="form-field">
+              <input type="radio" name="1" id="1" hidden />
+              <label for="1">1</label>
+            </div>
+            <div class="form-field">
+              <input type="radio" name="2" id="2" hidden />
+              <label for="2">2</label>
+            </div>
+            <div class="form-field">
+              <input type="radio" name="3" id="3" hidden />
+              <label for="3">3</label>
+            </div>
+            <div class="form-field">
+              <input type="radio" name="4" id="4" hidden />
+              <label for="4">4</label>
+            </div>
+            <div class="form-field">
+              <input type="radio" name="5" id="5" hidden />
+              <label for="5">5</label>
+            </div>
           </div>
           <input type="submit" value="Submit" />
         </form>

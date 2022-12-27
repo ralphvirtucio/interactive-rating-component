@@ -95,4 +95,64 @@ body {
   display: grid;
   place-items: center;
   font-family: 'Overpass', sans-serif;
+  background-color: var(--neutral-color-5);
+  padding-inline: 1rem;
+}
+
+.interactive {
+  background-color: var(--neutral-color-4);
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  border-radius: 15px;
+}
+
+.interactive__img {
+  background-color: hsla(213, 17%, 27%, 0.535);
+  border-radius: 100px;
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+
+.interactive__heading {
+  color: var(--neutral-color-1);
+  margin-block-end: 1rem;
+}
+
+.interactive__text {
+  color: var(--neutral-color-3);
+  font-size: var(--fs-body);
+  margin-block-end: 2rem;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-field {
+  background-color: hsla(213, 17%, 27%, 0.535);
+  border-radius: 100%;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 2rem;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.form-field label {
+  color: var(--neutral-color-2);
+}
+
+input[type='submit'] {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 100px;
+  width: 100%;
+  padding-block: 1rem;
+  color: var(--neutral-color-1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
 }

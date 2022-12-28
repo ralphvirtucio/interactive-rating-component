@@ -98,12 +98,14 @@ body {
   background-color: var(--neutral-color-5);
   padding-inline: 1rem;
 }
-
-.interactive {
+.interactive-ratings {
   background-color: var(--neutral-color-4);
   padding-inline: 1.5rem;
   padding-block: 2rem;
   border-radius: 15px;
+}
+
+.interactive-ratings--state {
 }
 
 .interactive__img {
@@ -130,7 +132,7 @@ body {
   align-items: center;
 }
 
-.form-field {
+.form-control {
   background-color: hsla(213, 17%, 27%, 0.535);
   border-radius: 100%;
   font-weight: 700;
@@ -139,9 +141,22 @@ body {
   width: 40px;
   height: 40px;
   text-align: center;
+  cursor: pointer;
 }
 
-.form-field label {
+.form-control input:checked {
+  background-color: var(--primary-color);
+}
+
+.form-control:hover {
+  background-color: var(--primary-color);
+}
+
+.form-control:hover label {
+  color: var(--neutral-color-1);
+}
+
+.form-control label {
   color: var(--neutral-color-2);
 }
 
@@ -155,4 +170,40 @@ input[type='submit'] {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+}
+
+/* THANK YOU STYLES */
+.interactive-thankyou-state {
+}
+
+.thankyou-illustration {
+  margin-inline: auto;
+}
+
+.rating--message {
+  color: var(--primary-color);
+  background-color: hsla(213, 17%, 27%, 0.535);
+  border-radius: 100px;
+  max-width: fit-content;
+  padding-inline: 0.65rem;
+  padding-block: 0.5rem;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+  margin-inline: auto;
+}
+
+.sub-heading {
+  color: var(--neutral-color-1);
+  text-align: center;
+  margin-block-end: 1rem;
+}
+
+.thankyou-message {
+  color: var(--neutral-color-2);
+  text-align: center;
+  font-size: var(--fs-body);
+}
+
+.hidden {
+  display: none;
 }

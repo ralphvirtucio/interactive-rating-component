@@ -23,7 +23,7 @@
 
   <body>
     <!-- INTERACTIVE CARD -->
-    <div class="interactive">
+    <div class="interactive-ratings interactive-ratings--state">
       <div class="interactive__ratings-card">
         <img
           src="./images/icon-star.svg"
@@ -36,63 +36,49 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <form action="/" class="rating-form">
-          <div class="ratings">
-            <div class="form-field">
-              <input type="radio" name="1" id="1" hidden />
-              <label for="1">1</label>
-            </div>
-            <div class="form-field">
-              <input type="radio" name="2" id="2" hidden />
-              <label for="2">2</label>
-            </div>
-            <div class="form-field">
-              <input type="radio" name="3" id="3" hidden />
-              <label for="3">3</label>
-            </div>
-            <div class="form-field">
-              <input type="radio" name="4" id="4" hidden />
-              <label for="4">4</label>
-            </div>
-            <div class="form-field">
-              <input type="radio" name="5" id="5" hidden />
-              <label for="5">5</label>
-            </div>
+        <!-- <form action="/" class="rating-form"> -->
+        <div class="ratings">
+          <div class="form-control">
+            <input type="radio" name="rating" id="1" value="1" hidden />
+            <label for="1">1</label>
           </div>
-          <input type="submit" value="Submit" />
-        </form>
+          <div class="form-control">
+            <input type="radio" name="rating" id="2" value="2" hidden />
+            <label for="2">2</label>
+          </div>
+          <div class="form-control">
+            <input type="radio" name="rating" id="3" value="3" hidden />
+            <label for="3">3</label>
+          </div>
+          <div class="form-control">
+            <input type="radio" name="rating" id="4" value="4" hidden />
+            <label for="4">4</label>
+          </div>
+          <div class="form-control">
+            <input type="radio" name="rating" id="five" value="5" hidden />
+            <label for="five">5</label>
+          </div>
+        </div>
+        <input type="submit" value="Submit" name="submit" />
+        <!-- </form> -->
       </div>
     </div>
-    <!-- Rating state start -->
 
-    <!-- How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit -->
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    <!-- You selected Add rating here out of 5 -->
-
-    <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <div class="interactive-ratings interactive-thankyou-state hidden">
+      <img
+        src="./images/illustration-thank-you.svg"
+        alt="Phone releasing a receipt"
+        class="thankyou-illustration"
+      />
+      <p class="rating--message">
+        You selected <span class="rating">4</span> out of 5
+      </p>
+      <h2 class="sub-heading">Thank you!</h2>
+      <p class="thankyou-message">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

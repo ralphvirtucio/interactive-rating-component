@@ -151,6 +151,11 @@ body {
   color: var(--neutral-color-1);
 }
 
+.form-control input:checked + .rating {
+  background-color: var(--neutral-color-3);
+  color: var(--neutral-color-1);
+}
+
 input[type='submit'] {
   background-color: var(--primary-color);
   border: none;
@@ -162,9 +167,15 @@ input[type='submit'] {
   letter-spacing: 2px;
   cursor: pointer;
 }
+input[type='submit']:hover {
+  background-color: var(--neutral-color-1);
+  color: var(--primary-color);
+}
 
 /* THANK YOU STYLES */
 .interactive-thankyou-state {
+  padding-inline: 2rem;
+  padding-block: 2rem;
 }
 
 .thankyou-illustration {
